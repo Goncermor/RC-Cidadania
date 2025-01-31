@@ -1,12 +1,24 @@
 <?php
+require 'require/database.php';
+header('Content-Type: application/json');
 
-// use require() fun for incliding the config file
+if (!isset($_GET['key'])) {
+    $cfg['status'] = 'error';
+    $cfg['message'] = 'Parameter key must be set';
+    echo json_encode($cfg);
+    die;
+}
 
-const WEBSITE_NAME = "";
-const ACCENT_COLOR = "";
-const MONGO_DB_AUTH_URL = "";
+$collection = $database->selectCollection('config');
+$document = $collection->findOne(['_id' => $_GET['key']]);
 
-
-
+if ($document == NULL) {
+    $cfg['status'] = 'error';
+    $cfg['message'] = 'Configuration key not found';
+} else {
+    $cfg['status'] = 'ok';
+    $cfg['value'] = $document['value'];
+}
+echo json_encode($cfg);
 
 ?>
