@@ -40,7 +40,7 @@ $article = [
     'title' => (string) $document->title,
     'author' => (string) $document->author,
     'cards' => (array) $document->cards,
-    'content' => (array) $document->cards,
+    'content' => (string) $document->content,
     'date' => (string) $document->date
 ];
 
