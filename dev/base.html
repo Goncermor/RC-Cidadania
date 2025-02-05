@@ -1,46 +1,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/theme/light.css">
+    <link rel="stylesheet" href="assets/theme/style.css">
+    <link id="themesheet" rel="stylesheet" href="assets/theme/light.css">
     <title>Jornal EcoTirso</title>
     <style>
         
     </style>
+    <script>
+        const themesheet = document.getElementById('themesheet');
+    </script>
 </head>
-<body>
-    <nav class="nav">
-        <ul>
+<body> 
+        <ul class="nav">
             <li style="top: 28px;">
                 <img src="assets/img/logo/Logo Black.png" id="logo_nav" alt="Logo Black">
             </li>
             <li style="top: 195px;">
                 <a href="#">
-                    <img src="assets/img/icons/home.svg" alt="home icon" id="icon_nav">
-                    <span></span>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"
+                    viewBox="0 0 24 24"  fill="none"  stroke="black"  stroke-width="1"  stroke-linecap="round"  
+                    stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home" id="icon_nav">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg>
+
+                
+                    <p>Home</p>
                 </a>
             </li>
             <li style="top: 215px;">
                 <a href="#">
-                <img src="assets/img/icons/search.svg" alt="search icon" id="icon_nav">
-                <span></span>
+
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"
+                    stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search" id="icon_nav">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" />
+                    </svg>
+
+                    <p>Search</p>
                 </a>
             </li>
             <li style="top: 235px;">
                 <a href="#">
-                    <img src="assets/img/icons/heart-handshake.svg" alt="hands icon" id="icon_nav">
-                    <span></span>
+
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"
+                    stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart-handshake" id="icon_nav">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    <path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" />
+                    <path d="M12.5 15.5l2 2" /><path d="M15 13l2 2" />
+                    </svg>
+
+                    <p>Developers</p>
                 </a>
             </li>
-            <li style="bottom: -58%;">
+            <li style="bottom: -56.5%;">
                 <a href="#">
                     <img src="assets/img/icons/moon.svg" alt="moon icon" id="icon_nav">
                 </a>
             </li>
         </ul>
-    </nav>
     <div id="principal">
         <div id="Circle_Blur" style="top: 0px; left: 70px; transform: translate(-20%,-20%)"></div>
         <div id="Circle_Blur" style="bottom: 0px; right:0px; transform: translate(20%,20%);"></div>
+
         <div></div>
         <div></div>
         <div></div>
