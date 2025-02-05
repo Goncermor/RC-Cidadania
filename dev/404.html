@@ -1,0 +1,37 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .error-container {
+    
+    margin-top: 10%;
+    margin-right: 10%;
+    user-select: none;
+    font-family: Open Sans;
+    text-align: end;
+    line-height: 1;
+
+  }
+  
+  .error-container .errorcode {
+    font-size: 200pt;
+    display: block;
+  }
+  .error-container .message, .backbtn {
+    margin-right: 24px;
+    font-size: 36pt;
+  }
+  .error-container .backbtn {
+    color: #00BBFF;
+    text-decoration: underline;
+  }
+</style>
+<div class="error-container">
+  <span class="errorcode">404</span>
+  <br>
+  <span class="message">Are you lost?</span>
+  <br>
+  <span class="backbtn" onclick="goBackfun()">Go Back</span>
+</div>
