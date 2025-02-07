@@ -64,22 +64,42 @@ body {
        stroke: var(--icon_color);
     }
   
-    #principal { 
+    .principal { 
       height: 100%;
       width: 95%; 
       position: relative; 
       top: -100%;
       left: 5%; 
-      z-index: 1; 
+      z-index: 0; 
       background-color: var(--background);}
   
-      #Circle_Blur {
+      .Circle_Blur {
         height: 200px; 
         width: 200px; 
         border-radius: 50%; 
         position: fixed; 
         background-color: #002AB2;
         filter: blur(150px);
-        z-index: 1; 
+        z-index: 0; 
         }
-        
+
+        .window_blur {
+          position: relative; 
+          height: 100%;
+          width: 100%; 
+         
+          background-image: linear-gradient(#002AB2,black);
+          z-index: 1;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+
+        .content { 
+          font-size: 250px; 
+          position: absolute; 
+          bottom: 50%; ;}
+
+        .nav:hover ~ .principal  .window_blur {
+          opacity: 0.6;
+          backdrop-filter: blur(8px);
+        }

@@ -4,36 +4,6 @@
     <link rel="stylesheet" href="assets/theme/style.css">
     <link id="themesheet" rel="stylesheet" href="assets/theme/light.css">
     <title>Jornal EcoTirso</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        nav { 
-            position: static;
-            height: 100%;
-            width: 70px;
-            border-right: #808080 solid 1px;
-            background-color: var(--background);
-            transition: width .3s .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-            display: flex;
-            flex-direction: column;
-          
-         
-        }
-        nav:hover {
-            width: 200px; 
-        }
-        nav * { 
-            width: 70px;
-        }
-        
-
-   
-
-    </style>
     <script>
         const themesheet = document.getElementById('themesheet');
     </script>
@@ -86,13 +56,12 @@
                 </a>
             </li>
         </ul>
-    <div id="principal">
-        <div id="Circle_Blur" style="top: 0px; left: 70px; transform: translate(-20%,-20%)"></div>
-        <div id="Circle_Blur" style="bottom: 0px; right:0px; transform: translate(20%,20%);"></div>
+    <div class="principal">
+        <div class="Circle_Blur" style="top: 0px; left: 70px; transform: translate(-20%,-20%)"></div>
+        <div class="Circle_Blur" style="bottom: 0px; right:0px; transform: translate(20%,20%);"></div>
 
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="window_blur"></div>
+        <div><p class="content">bom dia</p></div>
         <div></div>
     </div>
     
