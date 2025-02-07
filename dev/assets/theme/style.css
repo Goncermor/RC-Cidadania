@@ -1,23 +1,24 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+  *{font-family: Open Sans;}
+
 body {
     width: 100%;
     height: 100%;
     background-color: var(--background);
   } 
-
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-  
   
   .nav{ 
     position: relative;
     height: 100%;
-    width: 5%;
+    width: 70px;
     overflow: hidden;
     border-right: #808080 solid 1px;
     z-index: 2;
     background-color: var(--background);
     transition: width 0.3s ease;}
   
-    .nav:hover {width: 14%;}
+    .nav:hover {width: 200px;}
 
     .nav li { 
       position: relative;
@@ -87,19 +88,17 @@ body {
           position: relative; 
           height: 100%;
           width: 100%; 
-         
           background-image: linear-gradient(#002AB2,black);
           z-index: 1;
           opacity: 0;
-          transition: opacity 1s ease-in-out;
+          transition: opacity 0.3s ease-in-out;
         }
 
         .content { 
           font-size: 250px; 
           position: absolute; 
-          bottom: 50%; ;}
+          bottom: 50%; }
 
         .nav:hover ~ .principal  .window_blur {
           opacity: 0.6;
-          backdrop-filter: blur(8px);
         }
