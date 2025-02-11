@@ -99,3 +99,22 @@ body {
         }
 
         .caja {border: red solid 0px; position: absolute;}
+
+        .caja#title {
+          top: 9%;
+          height: 12%;
+          width: 98%; 
+          z-index: 1; 
+          left: 1%;
+        right: 1%;}
+
+        .caja#content {width: 70%;
+          height: 75%;
+          right: 24%;
+          bottom: 1%;
+          overflow: hidden;}
+
+          .caja#img {width: 20%; 
+            height: 75%; 
+            right: 1%; 
+            bottom: 1%;}
