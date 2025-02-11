@@ -67,7 +67,7 @@ body {
   
     .principal { 
       height: 100%;
-      width: 95%; 
+      width: calc(100% - 70px); 
       position: relative; 
       top: -100%;
       left: 70px; 
