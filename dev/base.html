@@ -19,8 +19,16 @@
         function cssChange() {
           currentIndex = (currentIndex + 1) % links.length;
           document.getElementById("themesheet").href = links[currentIndex];
-    
         }
+
+       function changepage(page){
+
+       fetch (page)
+        .then(x => x.text())
+        .then(y => document.getElementById("content_page").innerHTML = y);
+
+    }
+
     </script>
 </head>
 <body> 
@@ -29,7 +37,7 @@
                 <img src="assets/img/logo/Logo Black.png" id="logo_nav" alt="Logo Black">
             </li>
             <li style="top: 195px;">
-                <a href="#">
+                <a href="#" onclick="changepage('Home.html')">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"
                     viewBox="0 0 24 24"  fill="none"  stroke="black"  stroke-width="1"  stroke-linecap="round"  
                     stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home" id="icon_nav">
@@ -42,7 +50,7 @@
                 </a>
             </li>
             <li style="top: 215px;">
-                <a href="#">
+                <a href="#" onclick="changepage('Search.html')">
 
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"
                     stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search" id="icon_nav">
@@ -53,7 +61,7 @@
                 </a>
             </li>
             <li style="top: 235px;">
-                <a href="#">
+                <a href="#" onclick="changepage('Developers.html')">
 
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"
                     stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart-handshake" id="icon_nav">
@@ -71,7 +79,7 @@
                 </a>
             </li>
         </ul>
-    <div class="principal">
+    <div class="principal" id="content_page">
         <div class="Circle_Blur" style="top: 0px; left: 70px; transform: translate(-20%,-20%)"></div>
         <div class="Circle_Blur" style="bottom: 0px; right:0px; transform: translate(20%,20%);"></div>
         <div class="window_blur"></div>
