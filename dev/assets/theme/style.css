@@ -103,8 +103,7 @@ body {
         .box#title_box {
           top: 9%;
           height: 12%;
-          width: 98%; 
-          z-index: 1; 
+          width: 98%;  
           left: 1%;
         right: 1%;
       color: var(--icon_color);}
