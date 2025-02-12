@@ -5,7 +5,14 @@
     <link id="themesheet" rel="stylesheet" href="assets/theme/light.css">
     <title>Jornal EcoTirso</title>
     <script>
-        const themesheet = document.getElementById('themesheet');
+        let links = ["assets/theme/light.css", "assets/theme/dark.css"];
+        let currentIndex = 0;
+
+        function cssChange() {
+          currentIndex = (currentIndex + 1) % links.length;
+          document.getElementById("themesheet").href = links[currentIndex];
+    
+        }
     </script>
 </head>
 <body> 
@@ -51,7 +58,7 @@
                 </a>
             </li>
             <li style="bottom: -56.5%;">
-                <a href="#">
+                <a href="#" onclick="cssChange()">
                     <img src="assets/img/icons/moon.svg" alt="moon icon" id="icon_nav">
                 </a>
             </li>
