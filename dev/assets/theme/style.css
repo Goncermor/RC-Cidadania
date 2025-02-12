@@ -98,9 +98,9 @@ body {
           opacity: 0.6;
         }
 
-        .caja {border: red solid 0px; position: absolute;}
+        .box {border: red solid 0px; position: absolute;}
 
-        .caja#title {
+        .box#title_box {
           top: 9%;
           height: 12%;
           width: 98%; 
@@ -108,13 +108,13 @@ body {
           left: 1%;
         right: 1%;}
 
-        .caja#content {width: 70%;
+        .box#content_box {width: 70%;
           height: 75%;
           right: 24%;
           bottom: 1%;
           overflow: hidden;}
 
-          .caja#img {width: 20%; 
+          .box#img_box {width: 20%; 
             height: 75%; 
             right: 1%; 
             bottom: 1%;}

@@ -13,7 +13,11 @@
     <meta name="revisit-after" content="7 days">
     <meta name="author" content="Goncermor, Juan Torres, Hugo Silva, Mathéo Carneiro">
     <script>
-        const themesheet = document.getElementById('themesheet');
+        let themes = ['assets/theme/light.css', 'assets/theme/dark.css'];
+        
+
+
+        GetElementById(themesheet)
     </script>
 </head>
 <body> 
@@ -69,16 +73,16 @@
         <div class="Circle_Blur" style="bottom: 0px; right:0px; transform: translate(20%,20%);"></div>
         <div class="window_blur"></div>
 
-        <div class="caja" id="title" >
+        <div class="box" id="title_box" >
             <p style=" position: relative; font-size: 7.8vh;   line-height: 1; width: 95%; height: 65%; left: 5%;" id="title"></p>
             <p style=" position: relative; font-size: 4.2vh; line-height: 1; width: 95%; height: 35%; left: 5%;" id="Author_data"></p>
         </div>
 
-        <div class="caja" id="content">
+        <div class="box" id="content_box">
             <p style="position: relative; width: 100%; height: 100%; font-size: 18px; text-align: left;" id="content"></p>
         </div>
 
-        <div class="caja" id="img"></div>
+        <div class="box" id="img_box"></div>
     </div>
     
 </body>
