@@ -8,6 +8,64 @@ body {
     background-color: var(--background);
   } 
   
+  .news-section {
+    width: 100%; /* Ajusta a largura para 100% */
+    padding: 20px;
+    background-color: var(--background);
+    border-top: 2px solid #808080;
+    position: relative; 
+    margin: 20px auto; /* Centraliza a seção de notícias */
+    max-width: 1200px; /* Define uma largura máxima */
+}
+
+.news-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#news-container {
+  display: flex; /* Alinha os itens em linha */
+  flex-direction: row; /* Alinha a primeira notícia e o container das menores */
+  gap: 15px; /* Espaçamento entre os itens */
+}
+.small-news-container {
+  display: flex;
+  flex-direction: column; /* Alinha as notícias menores em coluna */
+}
+.news-item {
+  border: 1px solid #ccc;
+  padding: 25px 100;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Para posicionar a imagem */
+}
+.news-item.large {
+  margin-left: 100px;
+  margin-top: 30px;
+  flex: 2; /* Aumenta a largura da primeira notícia */
+  max-width: 600px; /* Define uma largura máxima */
+  margin-bottom: 15px; /* Espaçamento entre a primeira notícia e as menores */
+}
+
+.news-item.small {
+  margin-left: 10px;
+  margin-top: 30px; /* Espaçamento entre as notícias menores */
+  flex: 1; /* Define a largura das notícias menores */
+  max-width: 300px; /* Define uma largura máxima para as notícias menores */
+}
+.news-image {
+  width: 90%; /* Ajusta a largura da imagem para 100% do container */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 10px; /* Espaçamento acima da imagem */
+}
+.small-image {
+  width: 30%; /* Ajusta a largura da imagem para 30% do container */
+  height: auto; /* Mantém a proporção da imagem */
+  float: left; /* Faz a imagem flutuar à esquerda */
+  margin-right: 10px; /* Espaçamento à direita da imagem */
+}
+  
   .nav{ 
     position: relative;
     height: 100%;
