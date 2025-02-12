@@ -2,3 +2,5 @@
   --background: #fff;
   --icon_color: black;  
 }
+
+.logo_nav {filter: invert(0%);}
