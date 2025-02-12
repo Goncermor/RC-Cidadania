@@ -1,6 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-  *{font-family: Open Sans; margin: 0; padding: 0;}
+  *{font-family: Open Sans; margin: 0; padding: 0; transition: color 1s ease-in-out, background-color 1s ease-in-out;}
 
 body {
     width: 100%;
@@ -16,7 +16,7 @@ body {
     border-right: #808080 solid 1px;
     z-index: 2;
     background-color: var(--background);
-    transition: width 0.3s ease;}
+    transition: color 1s ease-in-out, background-color 1s ease-in-out,width 0.3s ease;}
   
     .nav:hover {width: 200px;}
 
@@ -49,14 +49,14 @@ body {
         opacity: 1;
         visibility: visible;}
 
-      #logo_nav { 
+      .logo_nav { 
       position: relative;
        width: 58px;
        height: 58px;
        left:6px; 
       }
   
-      #icon_nav {
+      .icon_nav {
       position: relative;
       opacity: 0.7;
       width: 45px;
@@ -106,13 +106,15 @@ body {
           width: 98%; 
           z-index: 1; 
           left: 1%;
-        right: 1%;}
+        right: 1%;
+      color: var(--icon_color);}
 
         .box#content_box {width: 70%;
           height: 75%;
           right: 24%;
           bottom: 1%;
-          overflow: hidden;}
+          overflow: hidden;
+        color: var(--icon_color);}
 
           .box#img_box {width: 20%; 
             height: 75%; 

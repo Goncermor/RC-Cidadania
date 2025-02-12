@@ -1,4 +1,7 @@
 :root {
   --background: #333;
-  --icon_color: white;  
+  --icon_color: white; 
+ 
 }
+
+.logo_nav {filter: invert(100%);}
