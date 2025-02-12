@@ -13,11 +13,14 @@
     <meta name="revisit-after" content="7 days">
     <meta name="author" content="Goncermor, Juan Torres, Hugo Silva, Mathéo Carneiro">
     <script>
-        let themes = ['assets/theme/light.css', 'assets/theme/dark.css'];
-        
+        let links = ["assets/theme/light.css", "assets/theme/dark.css"];
+        let currentIndex = 0;
 
-
-        GetElementById(themesheet)
+        function cssChange() {
+          currentIndex = (currentIndex + 1) % links.length;
+          document.getElementById("themesheet").href = links[currentIndex];
+    
+        }
     </script>
 </head>
 <body> 
@@ -63,7 +66,7 @@
                 </a>
             </li>
             <li style="bottom: -56.5%;">
-                <a href="#">
+                <a href="#" onclick="cssChange()">
                     <img src="assets/img/icons/moon.svg" alt="moon icon" id="icon_nav">
                 </a>
             </li>
