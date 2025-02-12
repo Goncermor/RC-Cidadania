@@ -15,10 +15,15 @@
     <script>
         let links = ["assets/theme/light.css", "assets/theme/dark.css"];
         let currentIndex = 0;
+        let icons_themes = ["assets/img/icons/moon.svg", "assets/img/icons/sun.svg"];
+        let currentIcon = 0;
 
         function cssChange() {
           currentIndex = (currentIndex + 1) % links.length;
           document.getElementById("themesheet").href = links[currentIndex];
+          currentIcon = (currentIcon + 1) % icons_themes.length;
+          document.getElementById("moon").src = icons_themes[currentIcon];
+          
         }
 
        function changepage(page){
@@ -75,7 +80,7 @@
             </li>
             <li style="bottom: -56.5%;">
                 <a href="#" onclick="cssChange()">
-                    <img src="assets/img/icons/moon.svg" alt="moon icon" class="icon_nav">
+                    <img src="assets/img/icons/moon.svg" alt="moon icon" class="icon_nav" id="moon">
                 </a>
             </li>
         </ul>
