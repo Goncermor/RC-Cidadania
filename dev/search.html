@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pesquisa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #searchBox {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #results {
+            margin-top: 20px;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="searchBox" placeholder="Digite sua pesquisa..." onkeyup="search()">
+    <div id="results"></div>
+
+    <script>
+
+        // Este codigo tem que ser mudado obviamente
+        const items = ["Apple", "Banana", "Cherry", "Date", "Grapes", "Mango", "Orange", "Pineapple"];
+
+        function search() {
+            let query = document.getElementById("searchBox").value.toLowerCase();
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            if (query.trim() === "") {
+                resultsDiv.style.display = "none";
+                return;
+            }
+
+            let filtered = items.filter(item => item.toLowerCase().includes(query));
+
+            if (filtered.length > 0) {
+                resultsDiv.style.display = "block";
+                filtered.forEach(item => {
+                    let div = document.createElement("div");
+                    div.textContent = item;
+                    resultsDiv.appendChild(div);
+                });
+            } else {
+                resultsDiv.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

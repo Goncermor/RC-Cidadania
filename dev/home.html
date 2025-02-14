@@ -18,6 +18,7 @@
         let icons_themes = ["assets/img/icons/moon.svg", "assets/img/icons/sun.svg"];
         let currentIcon = 0;
 
+<<<<<<< HEAD
 
         window.addEventListener('DOMContentLoaded', async () => {
             try {
@@ -98,6 +99,22 @@
                 .then(x => x.text())
                 .then(y => document.getElementById("content_page").innerHTML = y);
 
+=======
+        function cssChange() {
+            currentIndex = (currentIndex + 1) % links.length;
+            document.getElementById("themesheet").href = links[currentIndex];
+            currentIcon = (currentIcon + 1) % icons_themes.length;
+            document.getElementById("moon").src = icons_themes[currentIcon];
+
+        }
+
+        function changepage(page) {
+
+            fetch(page)
+                .then(x => x.text())
+                .then(y => document.getElementById("content_page").innerHTML = y);
+
+>>>>>>> afc5f3ebf23ef46a9410eb1732d1382bcabb8679
         }
 
     </script>
@@ -162,32 +179,57 @@
     <div class="principal" id="content_page">
         <div id="news-container">
             <div class="news-item large">
+<<<<<<< HEAD
                 <a href="google.com"><h3 id="titulo_noticia_1"></h3></a>
                 <p id="descricao_noticia_1"></p>
                 <img id="imagem_noticia_1" src="" alt="Imagem da Notícia 1" class="news-image">
                 <p id="data_noticia_1"></p>
+=======
+                <h3 id="titulo_noticia_1">Título da Notícia 1</h3>
+                <p id="descricao_noticia_1">Descrição breve da notícia 1.</p>
+                <img id="imagem_noticia_1" src="path/to/image1.jpg" alt="Imagem da Notícia 1" class="news-image">
+                <p id="data_noticia_1"><strong>Data:</strong> 12 de Fevereiro de 2025</p>
+>>>>>>> afc5f3ebf23ef46a9410eb1732d1382bcabb8679
             </div>
             <div class="small-news-container">
                 <div class="news-item small">
                     <img id="imagem_noticia_2" src="path/to/image2.jpg" alt="Imagem da Notícia 2"
                         class="news-image small-image">
+<<<<<<< HEAD
                     <h3 id="titulo_noticia_2"></h3>
                     <p id="descricao_noticia_2"></p>
                     <p id="data_noticia_2"></p>
+=======
+                    <h3 id="titulo_noticia_2">Título da Notícia 2</h3>
+                    <p id="descricao_noticia_2">Descrição breve da notícia 2.</p>
+                    <p id="data_noticia_2"><strong>Data:</strong> 13 de Fevereiro de 2025</p>
+>>>>>>> afc5f3ebf23ef46a9410eb1732d1382bcabb8679
                 </div>
                 <div class="news-item small">
                     <img id="imagem_noticia_3" src="path/to/image3.jpg" alt="Imagem da Notícia 3"
                         class="news-image small-image">
+<<<<<<< HEAD
                     <h3 id="titulo_noticia_3"></h3>
                     <p id="descricao_noticia_3"></p>
                     <p id="data_noticia_3"></p>
+=======
+                    <h3 id="titulo_noticia_3">Título da Notícia 3</h3>
+                    <p id="descricao_noticia_3">Descrição breve da notícia 3.</p>
+                    <p id="data_noticia_3"><strong>Data:</strong> 14 de Fevereiro de 2025</p>
+>>>>>>> afc5f3ebf23ef46a9410eb1732d1382bcabb8679
                 </div>
                 <div class="news-item small">
                     <img id="imagem_noticia_4" src="path/to/image4.jpg" alt="Imagem da Notícia 4"
                         class="news-image small-image">
+<<<<<<< HEAD
                     <h3 id="titulo_noticia_4"></h3>
                     <p id="descricao_noticia_4"></p>
                     <p id="data_noticia_4"></p>
+=======
+                    <h3 id="titulo_noticia_4">Título da Notícia 4</h3>
+                    <p id="descricao_noticia_4">Descrição breve da notícia 4.</p>
+                    <p id="data_noticia_4"><strong>Data:</strong> 15 de Fevereiro de 2025</p>
+>>>>>>> afc5f3ebf23ef46a9410eb1732d1382bcabb8679
                 </div>
             </div>
         </div>
