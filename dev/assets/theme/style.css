@@ -36,7 +36,8 @@ body {
   border: 1px solid #ccc;
   padding: 25px 100;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--background);
+  color: var(--icon_color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative; /* Para posicionar a imagem */
 }
@@ -148,12 +149,12 @@ body {
           width: 100%; 
           background-image: linear-gradient(#002AB2,black);
           z-index: 1;
-          opacity: 0;
+          display: none;
           transition: opacity 0.3s ease-in-out;
         }
 
         .nav:hover ~ .principal  .window_blur {
-          opacity: 0.6;
+          display: block; opacity: 0.6;
         }
 
         .box {border: red solid 0px; position: absolute;}
