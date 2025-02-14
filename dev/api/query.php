@@ -1,6 +1,7 @@
 <?php
 require 'require/database.php';
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 
 
 if (!isset($_GET['q'])) {
@@ -27,6 +28,7 @@ foreach ($documents as $document) {
     $obj['author'] = (string) $document->author;
     $obj['date'] = (string) $document->date;
     $obj['cover'] = (string) $document->cover;
+    $obj['description'] = (string) $document->description;
 
     $articleList[] = $obj;
 }
