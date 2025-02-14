@@ -1,6 +1,7 @@
 <?php
 require 'require/database.php';
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 
 if (!isset($_GET['id'])) {
     $response = [
@@ -39,7 +40,7 @@ if ($document === null) {
 $article = [
     'title' => (string) $document->title,
     'author' => (string) $document->author,
-    'cards' => (array) $document->cards,
+    'images' => (array) $document->images,
     'content' => (string) $document->content,
     'date' => (string) $document->date
 ];
